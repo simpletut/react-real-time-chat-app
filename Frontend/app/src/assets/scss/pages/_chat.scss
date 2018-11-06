@@ -1,0 +1,221 @@
+.chatPage {
+    height: 100%;
+    padding: 3rem;
+
+    .activeUsers {
+        position: absolute;
+        width: 30rem;
+        top: 3rem; left: 3rem;
+        background: $white;
+        border-radius: 3px;
+        box-shadow: 0 2px 30px 0 rgba(0,0,0,.1);
+        padding: 2rem 2%;
+        z-index: 10;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        ul, ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            height: 40rem;
+            overflow: scroll;
+
+            li {
+                i {
+                    color: #5fdba7;
+                    font-size: 1rem;
+                    margin-right: .8rem;
+                }
+            }
+        }
+    }
+
+    .messages_wrap {
+        position: relative;
+        height: 100%;
+        padding: 0 0 6rem 35rem;
+
+        h1 {
+            padding-top: 2rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
+
+            a {
+                font-size: 2rem;
+                margin-right: 1rem;
+                position: relative;
+            }
+        }
+
+        .messages {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            padding-bottom: 8rem;
+            
+            #list {
+                flex-grow: 1;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+
+
+                .msg {
+                    display: inline-block;
+                    background: #ffffff;
+                    border-radius: 3px;
+                    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+                    padding: 1.5rem 1.5%;
+
+                    h4 {
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
+                        margin-bottom: .5rem;
+                        font-weight: 800;
+                    }
+                    a {
+                        color: #3597DE;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                        margin: 0;
+                    }
+                }
+
+                .createdDate {
+                    display: block;
+                    width: 100%;
+                    padding: .5rem;
+                    font-size: 1.3rem;
+                    margin: 0 auto 2rem;
+                }
+                
+            }
+        }
+
+        .newMsgForm {
+            width: calc(100% - 3rem);
+            position: fixed;
+            bottom: 3rem;
+            right: 3rem;
+            padding: 0 0 0 35rem;
+        }
+        
+    }
+
+    .newMsgForm {
+        display: block;
+        width: 100%;   
+        margin: 0 auto;
+        position: absolute;
+
+        .wrap {
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            background: #ffffff;
+            border-radius: 3px;
+            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+            padding: .2rem;
+
+            .form_wrap {
+                padding: 0;
+
+                .form_row {
+                    margin: 0;
+    
+                    .form_item .form_input {
+                        input {
+                            background: $white;
+                        }
+
+                        .bottom_border::before { display: none; }
+
+                    }
+                }
+            }
+
+            .btnWrap {
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                z-index: 10;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                transform: translateY(-50%);
+
+                .btn {
+                    display: inline-block;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    border-radius: 50%;
+                    background: #3597DE;
+                    color: $white;
+                    font-size: 1.5rem;
+                    line-height: normal;
+
+                    &:hover {
+                        background: $black;
+                    }
+                    
+                    &:first-child {
+                        margin-right: 1rem;
+                    }
+
+                }
+
+            }
+
+        }
+    
+    }
+
+}
+
+@media only screen and (max-width: 767px){  
+
+    .activeUsers {
+        display: none;
+    }
+
+    .chatPage {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .messages_wrap {
+            padding-left: 0;
+
+            h1 {
+                padding-top: 0;
+            }
+
+            .newMsgForm {
+                padding-left: 0;
+            }
+
+            .newMsgForm {
+                width: 100%;
+                left: 0;
+                right: 0;
+                padding: 0 10px; 
+            }
+
+            
+
+        }
+
+
+    }
+
+
+}

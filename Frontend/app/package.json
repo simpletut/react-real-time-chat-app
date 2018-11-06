@@ -1,0 +1,35 @@
+{
+  "name": "react_realtime_chat_app",
+  "author": "Ashley Bibizadeh",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "moment": "^2.22.2",
+    "node-sass": "^4.10.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-loading-screen": "^0.0.17",
+    "react-router-dom": "^4.3.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
