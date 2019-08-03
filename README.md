@@ -57,7 +57,7 @@ Clone the repo to your machine
 git clone <CloneURL>
 ```
 
-### Lunch the backend
+### Launch the backend
 
 1)	Within terminal or cmd ensure you have navigated inside the 'Backend' directory and installed the dependencies
 
@@ -72,7 +72,7 @@ yarn install OR npm install
 yarn run start OR npm run start
 ```
 
-### Lunch the frontend
+### Launch the frontend
 
 1) Open a new terminal window and navigate inside the 'Frontend' folder as you will need to keep the backend running in the background
 
